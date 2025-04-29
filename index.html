@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Perfume - Premium Fragrances</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo">SEMILIR</a>
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="mobile-menu-btn">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Elevate Your Scent Experience</h1>
+                <p>Discover our exclusive collection of premium fragrances</p>
+                <a href="#products" class="btn">Explore Collections</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Signature Scents</h2>
+                <p>Handcrafted perfumes for every occasion</p>
+            </div>
+            
+            <div class="product-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="assets/noir.png" alt="Noir Elegance" loading="lazy" class="product-image-click" data-modal="noirModal">
+                        <span class="badge">Bestseller</span>
+                    </div>
+                    <div class="product-details">
+                        <h3>Noir Elegance</h3>
+                        <div class="price-rating">
+                            <span class="price">Rp 450.000</span>
+                            <span class="rating"><i class="fas fa-star"></i> 4.9</span>
+                        </div>
+                        <button class="btn whatsapp-btn" onclick="orderWhatsApp('Noir Elegance')">
+                            <i class="fab fa-whatsapp"></i> Order Now
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="assets/rose.png" alt="Rose Velvet" loading="lazy" class="product-image-click" data-modal="roseModal">
+                    </div>
+                    <div class="product-details">
+                        <h3>Rose Velvet</h3>
+                        <div class="price-rating">
+                            <span class="price">Rp 380.000</span>
+                            <span class="rating"><i class="fas fa-star"></i> 4.7</span>
+                        </div>
+                        <button class="btn whatsapp-btn" onclick="orderWhatsApp('Rose Velvet 100ml')">
+                            <i class="fab fa-whatsapp"></i> Order Now
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="assets/ocean.png" alt="Ocean Breeze" loading="lazy" class="product-image-click" data-modal="oceanModal">
+                        <span class="badge new">New</span>
+                    </div>
+                    <div class="product-details">
+                        <h3>Ocean Breeze</h3>
+                        <div class="price-rating">
+                            <span class="price">Rp 520.000</span>
+                            <span class="rating"><i class="fas fa-star"></i> 4.8</span>
+                        </div>
+                        <button class="btn whatsapp-btn" onclick="orderWhatsApp('Ocean Breeze')">
+                            <i class="fab fa-whatsapp"></i> Order Now
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="assets/ocean.png" alt="Ocean Breeze" loading="lazy" class="product-image-click" data-modal="oceanModal">
+                        <span class="badge new">New</span>
+                    </div>
+                    <div class="product-details">
+                        <h3>Ocean Breeze</h3>
+                        <div class="price-rating">
+                            <span class="price">Rp 520.000</span>
+                            <span class="rating"><i class="fas fa-star"></i> 4.8</span>
+                        </div>
+                        <button class="btn whatsapp-btn" onclick="orderWhatsApp('Ocean Breeze')">
+                            <i class="fab fa-whatsapp"></i> Order Now
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="assets/ocean.png" alt="Ocean Breeze" loading="lazy" class="product-image-click" data-modal="oceanModal">
+                        <span class="badge new">New</span>
+                    </div>
+                    <div class="product-details">
+                        <h3>Ocean Breeze</h3>
+                        <div class="price-rating">
+                            <span class="price">Rp 520.000</span>
+                            <span class="rating"><i class="fas fa-star"></i> 4.8</span>
+                        </div>
+                        <button class="btn whatsapp-btn" onclick="orderWhatsApp('Ocean Breeze')">
+                            <i class="fab fa-whatsapp"></i> Order Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Modals -->
+    <!-- Noir Elegance Modal -->
+    <div class="product-modal" id="noirModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-image">
+                <img src="assets/noir.png" alt="Noir Elegance">
+            </div>
+            <div class="modal-details">
+                <h3>Noir Elegance</h3>
+                <div class="price-rating">
+                    <span class="price">Rp 450.000</span>
+                    <span class="rating"><i class="fas fa-star"></i> 4.9</span>
+                </div>
+                <div class="product-description">
+                    <p>Noir Elegance adalah parfum premium dengan aroma kayu yang dalam dan sensual. Kombinasi kayu cendana, amber, dan sedikit vanilla menciptakan kesan misterius namun elegan.</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> Tahan lama 8-10 jam</li>
+                        <li><i class="fas fa-check"></i> Aroma yang khas dan unik</li>
+                        <li><i class="fas fa-check"></i> Botol desain premium</li>
+                        <li><i class="fas fa-check"></i> Ukuran 100ml</li>
+                    </ul>
+                </div>
+                <button class="btn whatsapp-btn modal-order-btn" onclick="orderWhatsApp('Noir Elegance')">
+                    <i class="fab fa-whatsapp"></i> Pesan Sekarang
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rose Velvet Modal -->
+    <div class="product-modal" id="roseModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-image">
+                <img src="assets/rose.png" alt="Rose Velvet">
+            </div>
+            <div class="modal-details">
+                <h3>Rose Velvet</h3>
+                <div class="price-rating">
+                    <span class="price">Rp 380.000</span>
+                    <span class="rating"><i class="fas fa-star"></i> 4.7</span>
+                </div>
+                <div class="product-description">
+                    <p>Rose Velvet menghadirkan keanggunan mawar Bulgaria yang dipadukan dengan vanilla Madagaskar. Aroma floral yang mewah dengan sentuhan manis yang lembut.</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> Tahan lama 6-8 jam</li>
+                        <li><i class="fas fa-check"></i> Aroma floral yang elegan</li>
+                        <li><i class="fas fa-check"></i> Desain botol vintage</li>
+                        <li><i class="fas fa-check"></i> Ukuran 100ml</li>
+                    </ul>
+                </div>
+                <button class="btn whatsapp-btn modal-order-btn" onclick="orderWhatsApp('Rose Velvet')">
+                    <i class="fab fa-whatsapp"></i> Pesan Sekarang
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ocean Breeze Modal -->
+    <div class="product-modal" id="oceanModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-image">
+                <img src="assets/ocean.png" alt="Ocean Breeze">
+            </div>
+            <div class="modal-details">
+                <h3>Ocean Breeze</h3>
+                <div class="price-rating">
+                    <span class="price">Rp 520.000</span>
+                    <span class="rating"><i class="fas fa-star"></i> 4.8</span>
+                </div>
+                <div class="product-description">
+                    <p>Ocean Breeze menghadirkan kesegaran air laut dengan sentuhan citrus dan aroma musk yang ringan. Parfum yang sempurna untuk aktivitas sehari-hari.</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> Tahan lama 7-9 jam</li>
+                        <li><i class="fas fa-check"></i> Aroma segar dan bersemangat</li>
+                        <li><i class="fas fa-check"></i> Botol modern dengan gradasi biru</li>
+                        <li><i class="fas fa-check"></i> Ukuran 100ml</li>
+                    </ul>
+                </div>
+                <button class="btn whatsapp-btn modal-order-btn" onclick="orderWhatsApp('Ocean Breeze')">
+                    <i class="fab fa-whatsapp"></i> Pesan Sekarang
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Our Perfume Craft</h2>
+                    <p>Each Luxury perfume is meticulously crafted using the finest ingredients sourced from around the world. Our master perfumers blend tradition with innovation to create unique fragrances that tell a story.</p>
+                    <p>We believe a great perfume should evolve throughout the day, revealing different notes as time passes.</p>
+                </div>
+                <div class="about-img">
+                    <img src="assets/proses.png" alt="Perfume Making Process" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Get In Touch</h2>
+                <p>We'd love to hear from you</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-info">
+                        <a href="tel:+6287753462865" class="info-card" target="_blank">
+                            <i class="fas fa-phone"></i>
+                            <h3>Call Us</h3>
+                            <p>+62 877-5346-2865</p>
+                        </a>
+                        
+                        <a href="mailto:contact@luxuryperfume.co.id" class="info-card" target="_blank">
+                            <i class="fas fa-envelope"></i>
+                            <h3>Email Us</h3>
+                            <p>contact@luxuryperfume.co.id</p>
+                        </a>
+                        
+                        <a href="https://maps.google.com/?q=Jl.+Kemang+Raya+No.+12,+Jakarta" class="info-card" target="_blank">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <h3>Visit Us</h3>
+                            <p>Jl. Kemang Raya No. 12, Jakarta</p>
+                        </a>
+                    </div>
+                    
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>LUXURY</h3>
+                    <p>Crafting exceptional fragrances since 2015. Our perfumes are designed to be memorable and distinctive.</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Connect With Us</h3>
+                    <div class="social-media">
+                        <a href="https://wa.me/6287753462865" target="_blank" class="social-icon whatsapp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://instagram.com/luxuryperfume" target="_blank" class="social-icon instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://shopee.co.id/luxuryperfume" target="_blank" class="social-icon shopee">
+                            <i class="fas fa-shopping-bag"></i>
+                        </a>
+                        <a href="https://tiktok.com/@luxuryperfume" target="_blank" class="social-icon tiktok">
+                            <i class="fab fa-tiktok"></i> <!-- Ikon resmi dari FA 6.5+ -->
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Luxury Perfume. All Rights Reserved.</p>
+                <p>Made with <i class="fas fa-heart"></i> in Indonesia</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
