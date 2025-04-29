@@ -157,7 +157,7 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 50px;
+    height: 60px;
 }
 
 .logo {
@@ -241,11 +241,11 @@ img {
     display: flex;
     align-items: center;
     color: var(--text-light);
-    margin-top: 80px;
+    margin-top: 3.7rem;
 }
 
 .hero-content {
-    max-width: 600px;
+    max-width: 100%;
 }
 
 .hero-content h1 {
@@ -784,10 +784,10 @@ img {
 
     .nav-links {
         position: fixed;
-        top: 80px;
+        top: 3.75rem;
         left: -100%;
         width: 100%;
-        height: calc(100vh - 80px);
+        height: calc(100vh - 60px);
         background-color: var(--primary-light);
         flex-direction: column;
         align-items: center;
