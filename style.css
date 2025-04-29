@@ -785,19 +785,18 @@ img {
     .nav-links {
         position: fixed;
         top: 3.75rem;
-        left: -100%;
-        width: 100%;
-        height: calc(100vh - 60px);
+        right: -100%;
+        width: 70%;
+        height: 50vh;
         background-color: var(--primary-light);
         flex-direction: column;
         align-items: center;
-        justify-content: center;
         padding: 20px 0;
         transition: var(--transition);
     }
 
     .nav-links.active {
-        left: 0;
+        right: 0;
     }
 
     .nav-links li {
